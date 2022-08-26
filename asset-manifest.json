@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/krishna-blog-app/static/css/main.6bd0fc60.css",
+    "main.js": "/krishna-blog-app/static/js/main.a136b921.js",
+    "static/js/787.3c466319.chunk.js": "/krishna-blog-app/static/js/787.3c466319.chunk.js",
+    "index.html": "/krishna-blog-app/index.html",
+    "main.6bd0fc60.css.map": "/krishna-blog-app/static/css/main.6bd0fc60.css.map",
+    "main.a136b921.js.map": "/krishna-blog-app/static/js/main.a136b921.js.map",
+    "787.3c466319.chunk.js.map": "/krishna-blog-app/static/js/787.3c466319.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bd0fc60.css",
+    "static/js/main.a136b921.js"
+  ]
+}
