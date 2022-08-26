@@ -1,38 +1,233 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  color: #2d2d2d;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .4s;
+}
+a:hover {
+  color: #00bbda;
+}
+h1,h2,h3,h4,h5,h6,p,ul {
+  padding: 0px;
+  margin: 0px;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.66rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+h6 {
+  font-size: .88rem;
+  font-weight: 400;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.url {
+  text-decoration: underline;
+}
+.btn {
+  background-color: #00bbda;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 4px;
+  transition: all .4s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.navbar {
+  padding: 25px 0px;
+  -webkit-box-shadow: 0px 0px 15px -7px rgba(0,187,218,0.62);
+  -moz-box-shadow: 0px 0px 15px -7px rgba(0,187,218,0.62);
+  box-shadow: 0px 0px 15px -7px rgba(0,187,218,0.62);
+}
+.nav-wrapp {
+  display: flex;
+}
+.Logo {
+  font-size: 25px;
+  letter-spacing: 2px;
+  max-width: 10%;
+  width: 100%;
+  font-weight: 700;
+}
+.Logo a {
+  color: #00bbda;
+}
+.nav-links {
+  max-width: 60%;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-links a {
+  padding: 0px 15px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links a:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #00bbda;
+  top: -4px;
+  right: 16px;
+  border-radius: 50%;
+  transition: all .4s;
+  transform: scale(0);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links a:hover:after {
+  transform: scale(1);
+}
+.header-btn {
+  max-width: 30%;
+  width: 100%;
+  text-align: right;
+}
+.header-btn .btn {
+  margin-left: 18px;
+}
+.login-wrapp {
   display: flex;
-  flex-direction: column;
+  padding: 60px 0px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.login-page {
+  padding: 15px;
+  max-width: 850px;
+  width: 100%;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff;
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-conte {
+  background-color: #00bbda;
+  border-radius: 12px;
+  padding: 50px 15px;
+  max-width: 50%;
+  width: 100%;
+  margin-right: 25px;
+}
+.login-conte * {
+  color: #fff;
+}
+.login-page p {
+  margin: 20px 0px;
+}
+.login-details {
+  align-self: center;
+}
+.post-wrapp {
+  padding: 30px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff;
+  margin: 60px 0px;
+  background-color: #fafafa;
+}
+.post-wrapp h3 {
+  margin-bottom: 25px;
+}
+input, textarea {
+  display: block;
+  margin: 10px 0px 20px;
+  width: 100%;
+  min-height: 45px;
+  border: none;
+  box-shadow:  20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff;
+  outline: none;
+  padding: 15px;
+  border-radius: 6px;
+}
+.post-wrapp button {
+  min-width: 200px;
+}
+.homepage-banner {
+  padding: 50px 0px;
+}
+.homepage-banner img {
+  border-radius: 12px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.homePage {
+  background-color: #fff5f0;
+  padding: 30px 20px;
+  border-radius: 12px;
+  
+}
+.homePage-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+.post {
+  flex-basis: 47%;
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .4s;
+  margin: 0px 15px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.deletePost {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+}
+.deletePost svg path {
+  fill: #2d2d2d;
+}
+.post:hover {
+  background-color: #fff5f0;
+  box-shadow:  20px 20px 60px #d9d0cc,
+             -20px -20px 60px #ffffff;
+}
+.tagname {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #00bbda;
+  font-weight: 500;
+}
+.title h3 {
+  margin: 30px 0px 20px;
+}
+.postTextContainer {
+  margin-bottom: 20px;
+  flex-grow: 1;
 }
